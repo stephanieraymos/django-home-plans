@@ -1,3 +1,4 @@
 from django.shortcuts import render
 
-# Create your views here.
+def pronghorn(request):
+    return render(request, 'outdoorPlans/pronghorn.html')
