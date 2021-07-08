@@ -81,6 +81,8 @@ DATABASES = {
         'NAME': BASE_DIR / 'homeplansdb',
         'USER': 'stephanie',
         'PASSWORD': env('DB_PASSWORD'),
+        'HOST': 'localhost',
+        'PORT': '5432',
     }
 }
 
