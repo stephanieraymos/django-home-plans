@@ -19,5 +19,5 @@ import outdoorPlans.views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('pronghorn', outdoorPlans.views.pronghorn, name='pronghorn'),
+    path('home', outdoorPlans.views.home, name='home'),
 ]

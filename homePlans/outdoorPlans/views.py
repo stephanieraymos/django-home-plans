@@ -1,4 +1,4 @@
 from django.shortcuts import render
 
-def pronghorn(request):
-    return render(request, 'outdoorPlans/pronghorn.html')
+def home(request):
+    return render(request, 'outdoorPlans/home.html')
