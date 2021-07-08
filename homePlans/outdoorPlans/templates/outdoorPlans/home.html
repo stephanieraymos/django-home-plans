@@ -1,1 +1,7 @@
-Pronghorn!
+<h1>Outdoor Plans</h1>
+
+{% for outdoorPlan in outdoorPlans.all %}
+
+{{ outdoorPlan.summary }}
+
+{% endfor %}
