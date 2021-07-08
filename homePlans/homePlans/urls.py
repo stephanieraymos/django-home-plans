@@ -20,5 +20,4 @@ import outdoorPlans.views
 urlpatterns = [
     path('', outdoorPlans.views.home, name='home'),
     path('admin/', admin.site.urls),
-    path('home', outdoorPlans.views.home, name='home'),
 ]
