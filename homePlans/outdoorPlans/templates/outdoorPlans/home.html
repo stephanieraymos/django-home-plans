@@ -13,16 +13,11 @@
 
     <title>Home improvement plans for our house</title>
 
-    <link
-      rel="canonical"
-      href="https://getbootstrap.com/docs/4.0/examples/album/"
-    />
-
     <!-- Bootstrap core CSS -->
-    <link href="{% static 'bootstrap/css/bootstrap.min.css' %}" rel="stylesheet" />
-
-    <!-- Custom styles for this template -->
-    <link href="album.css" rel="stylesheet" />
+    <link
+      href="{% static 'bootstrap/css/bootstrap.min.css' %}"
+      rel="stylesheet"
+    />
   </head>
 
   <body>
@@ -52,18 +47,14 @@
 
             <div class="col-md-4">
               <div class="card mb-4 box-shadow">
-                <img
-                  class="card-img-top"
-                  src="{{ outdoorPlan.image.url }}"
-                />
+                <img class="card-img-top" src="{{ outdoorPlan.image.url }}" />
                 <div class="card-body">
                   <p class="card-text">{{ outdoorPlan.summary }}</p>
-
                 </div>
               </div>
             </div>
+            {% endfor %}
           </div>
-          {% endfor %}
         </div>
       </div>
     </main>
