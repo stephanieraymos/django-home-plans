@@ -78,7 +78,7 @@ WSGI_APPLICATION = 'homePlans.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': BASE_DIR / 'homeplansdb',
+        'NAME': 'homeplansdb',
         'USER': 'stephanie',
         'PASSWORD': env('DB_PASSWORD'),
         'HOST': 'localhost',
