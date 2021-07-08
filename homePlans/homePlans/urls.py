@@ -22,7 +22,8 @@ import outdoorPlans.views
 urlpatterns = [
     path('', outdoorPlans.views.home, name='home'),
     path('admin/', admin.site.urls),
-] 
+    path('outdoorPlans/<int:outdoorPlan_id>', outdoorPlans.views.detail, name='detail'),
+]
 
-urlpatterns += static(settings.STATIC_URL, document_root = settings.STATIC_ROOT)
-urlpatterns += static(settings.MEDIA_URL, document_root = settings.MEDIA_ROOT)
+urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
+urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
