@@ -7,4 +7,4 @@ def home(request):
 
 def detail(request, plan_id):
     plan_detail = get_object_or_404(Plan, pk=plan_id)
-    return render(request, 'plans/home.html')
+    return render(request, 'plans/detail.html', {'plan': plan_detail})
