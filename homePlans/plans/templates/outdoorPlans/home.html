@@ -43,13 +43,13 @@
       <div class="album py-5 bg-light">
         <div class="container">
           <div class="row">
-            {% for outdoorPlan in outdoorPlans.all %}
+            {% for plan in plans.all %}
 
             <div class="col-md-4">
               <div class="card mb-4 box-shadow">
-                <img class="card-img-top" src="{{ outdoorPlan.image.url }}" />
+                <img class="card-img-top" src="{{ plan.image.url }}" />
                 <div class="card-body">
-                  <p class="card-text">{{ outdoorPlan.summary }}</p>
+                  <p class="card-text">{{ plan.summary }}</p>
                 </div>
               </div>
             </div>

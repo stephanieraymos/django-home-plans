@@ -17,12 +17,12 @@ from django.contrib import admin
 from django.urls import path
 from django.conf import settings
 from django.conf.urls.static import static
-import outdoorPlans.views
+import plans.views
 
 urlpatterns = [
-    path('', outdoorPlans.views.home, name='home'),
+    path('', plans.views.home, name='home'),
     path('admin/', admin.site.urls),
-    path('outdoorPlans/<int:outdoorPlan_id>', outdoorPlans.views.detail, name='detail'),
+    path('plans/<int:plan_id>', plans.views.detail, name='detail'),
 ]
 
 urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
