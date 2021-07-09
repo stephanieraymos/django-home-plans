@@ -46,12 +46,14 @@
             {% for plan in plans.all %}
 
             <div class="col-md-4">
-              <div class="card mb-4 box-shadow">
-                <img class="card-img-top" src="{{ plan.image.url }}" />
-                <div class="card-body">
-                  <p class="card-text">{{ plan.summary }}</p>
+              <a href="{% url 'detail' plan.id %}">
+                <div class="card mb-4 box-shadow">
+                  <img class="card-img-top" src="{{ plan.image.url }}" />
+                  <div class="card-body">
+                    <p class="card-text">{{ plan.summary }}</p>
+                  </div>
                 </div>
-              </div>
+              </a>
             </div>
             {% endfor %}
           </div>
