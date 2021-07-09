@@ -1,1 +1,42 @@
-{{ plan.summary }}
+<!DOCTYPE html>
+<html lang="en">
+  {% load static %}
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <link rel="icon" href="/docs/4.0/assets/img/favicons/favicon.ico" />
+
+    <title>Home improvement plans for our house</title>
+
+    <!-- Bootstrap core CSS -->
+    <link
+      href="{% static 'bootstrap/css/bootstrap.min.css' %}"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <main role="main">
+      <section class="jumbotron text-center">
+        <div class="container">
+          <h1 class="jumbotron-heading">Plan Detail</h1>
+          <p class="lead text-muted">{{ plan.summary }}</p>
+
+          <img src="{% static 'raymos.jpg' %}" height="300" />
+          <p>
+            <a href="{% url 'home' %}" class="btn btn-primary my-2">Back Home</a>
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <script src="{% static 'jquery-3.6.0.min.js' %}"></script>
+    <script src="{% static 'popper-2.9.2.min.js' %}"></script>
+    <script src="{% static 'bootstrap/js/bootstrap.js' %}"></script>
+  </body>
+</html>
